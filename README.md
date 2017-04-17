@@ -1,9 +1,11 @@
 # api documentation for  [redux-thunk (v2.2.0)](https://github.com/gaearon/redux-thunk)  [![npm package](https://img.shields.io/npm/v/npmdoc-redux-thunk.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-redux-thunk) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-redux-thunk.svg)](https://travis-ci.org/npmdoc/node-npmdoc-redux-thunk)
 #### Thunk middleware for Redux.
 
-[![NPM](https://nodei.co/npm/redux-thunk.png?downloads=true)](https://www.npmjs.com/package/redux-thunk)
+[![NPM](https://nodei.co/npm/redux-thunk.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/redux-thunk)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-redux-thunk/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-redux-thunk_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-redux-thunk/build..beta..travis-ci.org/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-redux-thunk/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-redux-thunk/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-redux-thunk/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-redux-thunk/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-redux-thunk/build/screenCapture.npmPackageListing.svg)
 
@@ -17,8 +19,7 @@
 
 {
     "author": {
-        "name": "Dan Abramov",
-        "email": "dan.abramov@me.com"
+        "name": "Dan Abramov"
     },
     "bugs": {
         "url": "https://github.com/gaearon/redux-thunk/issues"
@@ -88,21 +89,17 @@
     "main": "lib/index.js",
     "maintainers": [
         {
-            "name": "aikoven",
-            "email": "dan.lytkin@gmail.com"
+            "name": "aikoven"
         },
         {
-            "name": "gaearon",
-            "email": "dan.abramov@gmail.com"
+            "name": "gaearon"
         },
         {
-            "name": "timdorr",
-            "email": "timdorr@timdorr.com"
+            "name": "timdorr"
         }
     ],
     "name": "redux-thunk",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/gaearon/redux-thunk.git"
@@ -122,110 +119,6 @@
     "typings": "./index.d.ts",
     "version": "2.2.0"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module redux-thunk](#apidoc.module.redux-thunk)
-1.  boolean <span class="apidocSignatureSpan">redux-thunk.</span>__esModule
-1.  [function <span class="apidocSignatureSpan">redux-thunk.</span>default (_ref)](#apidoc.element.redux-thunk.default)
-
-#### [module redux-thunk.default](#apidoc.module.redux-thunk.default)
-1.  [function <span class="apidocSignatureSpan">redux-thunk.</span>default (_ref)](#apidoc.element.redux-thunk.default.default)
-1.  [function <span class="apidocSignatureSpan">redux-thunk.default.</span>withExtraArgument (extraArgument)](#apidoc.element.redux-thunk.default.withExtraArgument)
-
-
-
-# <a name="apidoc.module.redux-thunk"></a>[module redux-thunk](#apidoc.module.redux-thunk)
-
-#### <a name="apidoc.element.redux-thunk.default"></a>[function <span class="apidocSignatureSpan">redux-thunk.</span>default (_ref)](#apidoc.element.redux-thunk.default)
-- description and source-code
-```javascript
-default = function (_ref) {
-  var dispatch = _ref.dispatch,
-      getState = _ref.getState;
-  return function (next) {
-    return function (action) {
-      if (typeof action === 'function') {
-        return action(dispatch, getState, extraArgument);
-      }
-
-      return next(action);
-    };
-  };
-}
-```
-- example usage
-```shell
-n/a
-```
-
-
-
-# <a name="apidoc.module.redux-thunk.default"></a>[module redux-thunk.default](#apidoc.module.redux-thunk.default)
-
-#### <a name="apidoc.element.redux-thunk.default.default"></a>[function <span class="apidocSignatureSpan">redux-thunk.</span>default (_ref)](#apidoc.element.redux-thunk.default.default)
-- description and source-code
-```javascript
-default = function (_ref) {
-  var dispatch = _ref.dispatch,
-      getState = _ref.getState;
-  return function (next) {
-    return function (action) {
-      if (typeof action === 'function') {
-        return action(dispatch, getState, extraArgument);
-      }
-
-      return next(action);
-    };
-  };
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.redux-thunk.default.withExtraArgument"></a>[function <span class="apidocSignatureSpan">redux-thunk.default.</span>withExtraArgument (extraArgument)](#apidoc.element.redux-thunk.default.withExtraArgument)
-- description and source-code
-```javascript
-function createThunkMiddleware(extraArgument) {
-  return function (_ref) {
-    var dispatch = _ref.dispatch,
-        getState = _ref.getState;
-    return function (next) {
-      return function (action) {
-        if (typeof action === 'function') {
-          return action(dispatch, getState, extraArgument);
-        }
-
-        return next(action);
-      };
-    };
-  };
-}
-```
-- example usage
-```shell
-...
-## Injecting a Custom Argument
-
-Since 2.1.0, Redux Thunk supports injecting a custom argument using the 'withExtraArgument' function:
-
-'''js
-const store = createStore(
-reducer,
-applyMiddleware(thunk.withExtraArgument(api))
-)
-
-// later
-function fetchUser(id) {
-return (dispatch, getState, api) => {
-  // you can use api here
-}
-...
 ```
 
 
