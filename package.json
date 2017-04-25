@@ -1,7 +1,7 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
     "buildNpmdoc": "redux-thunk",
-    "description": "api documentation for [redux-thunk (v2.2.0)](https://github.com/gaearon/redux-thunk) [![npm package](https://img.shields.io/npm/v/npmdoc-redux-thunk.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-redux-thunk) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-redux-thunk.svg)](https://travis-ci.org/npmdoc/node-npmdoc-redux-thunk)",
+    "description": "#### basic api documentation for  [redux-thunk (v2.2.0)](https://github.com/gaearon/redux-thunk)  [![npm package](https://img.shields.io/npm/v/npmdoc-redux-thunk.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-redux-thunk) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-redux-thunk.svg)](https://travis-ci.org/npmdoc/node-npmdoc-redux-thunk)",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "redux-thunk": "*",

@@ -1,4 +1,7 @@
-# api documentation for  [redux-thunk (v2.2.0)](https://github.com/gaearon/redux-thunk)  [![npm package](https://img.shields.io/npm/v/npmdoc-redux-thunk.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-redux-thunk) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-redux-thunk.svg)](https://travis-ci.org/npmdoc/node-npmdoc-redux-thunk)
+# npmdoc-redux-thunk
+
+#### basic api documentation for  [redux-thunk (v2.2.0)](https://github.com/gaearon/redux-thunk)  [![npm package](https://img.shields.io/npm/v/npmdoc-redux-thunk.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-redux-thunk) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-redux-thunk.svg)](https://travis-ci.org/npmdoc/node-npmdoc-redux-thunk)
+
 #### Thunk middleware for Redux.
 
 [![NPM](https://nodei.co/npm/redux-thunk.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/redux-thunk)
@@ -117,7 +120,8 @@
         "test": "cross-env BABEL_ENV=commonjs mocha --compilers js:babel-core/register --reporter spec test/*.js"
     },
     "typings": "./index.d.ts",
-    "version": "2.2.0"
+    "version": "2.2.0",
+    "bin": {}
 }
 ```
 
